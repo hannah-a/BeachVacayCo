@@ -1,0 +1,8 @@
+-make favicon
+- class active
+-fix hover color
+-hero image scaling and caption
+-make sure all images have sizes
+-forwading
+
+-center destinations page

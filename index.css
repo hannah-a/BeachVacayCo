@@ -1,0 +1,924 @@
+/*font-family: 'Alegreya SC', serif;
+font-family: 'Noto Serif', serif;*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --blue: #03a6a6;
+  --light-blue: #7dfff2;
+  --blue-white: #e3ebf0;
+  --pink: #f22786;
+  --brown: #a68077;
+  --sand-yellow: #ffec6d;
+  --light-grey: #f0f0f0;
+}
+body {
+  background-color: var(--light-grey);
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+  min-height: 500px;
+}
+main {
+  font-family: "Noto Serif";
+}
+main h1 {
+  font-family: "Alegreya SC", serif;
+  font-size: 2.4rem;
+  margin: 4rem 2rem 2rem 2rem;
+}
+/*
+|
+|
+|
+|
+|
+|
+HEADER
+|
+|
+|
+|
+|
+|
+*/
+
+@media only screen and (min-width: 601px) {
+  header {
+    background-color: white;
+    box-shadow: 0px 5px 5px rgb(105, 105, 105);
+    position: relative;
+    z-index: 1;
+  }
+  div.logo h1 {
+    font-family: "Alegreya SC", serif;
+    font-size: 5.9rem;
+    letter-spacing: 0.15rem;
+    margin: 0 2rem 0 2rem;
+    text-align: center;
+    position: relative;
+    top: 1rem;
+    z-index: 1;
+  }
+  .beachEffect {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 3.3rem;
+    z-index: 0;
+  }
+  div.logoSand {
+    background: rgb(255, 236, 109);
+    background: radial-gradient(
+      circle,
+      rgba(255, 236, 109, 1) 0%,
+      rgba(255, 237, 116, 1) 82%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    height: 60px;
+    width: 30%;
+    border-radius: 3000% 0 0 1000%;
+  }
+  div.logoWater {
+    background: rgb(0, 255, 230);
+    background: radial-gradient(
+      circle,
+      rgba(0, 255, 230, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    height: 60px;
+    width: 30%;
+    border-radius: 0 3000% 1000% 0;
+  }
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  nav {
+    font-family: "Alegreya SC", serif;
+    font-weight: 700;
+    font-size: 7.4rem;
+    letter-spacing: 0.05rem;
+    position: relative;
+    bottom: 1.5rem;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 3rem 0 3rem;
+    list-style-type: none;
+    padding: 1rem;
+  }
+  .active {
+    background: #7dfff2; /* Old browsers */
+    background: radial-gradient(ellipse at center, #7dfff2 1%, #ffffff 59%);
+  }
+
+  nav ul li a:hover {
+    color: grey;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    background-color: white;
+    box-shadow: 0px 5px 5px rgb(105, 105, 105);
+    position: relative;
+    z-index: 1;
+  }
+  div.logo h1 {
+    font-family: "Alegreya SC", serif;
+    font-size: 5.9rem;
+    letter-spacing: 0.15rem;
+    margin: 0 2rem 0 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .beachEffect {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 4rem;
+    z-index: 0;
+  }
+  div.logoSand {
+    background: rgb(255, 236, 109);
+    background: radial-gradient(
+      circle,
+      rgba(255, 236, 109, 1) 0%,
+      rgba(255, 237, 116, 1) 82%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    height: 40px;
+    width: 40%;
+    border-radius: 3000% 0 0 1000%;
+  }
+  div.logoWater {
+    background: rgb(0, 255, 230);
+    background: radial-gradient(
+      circle,
+      rgba(0, 255, 230, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    height: 40px;
+    width: 40%;
+    border-radius: 0 3000% 1000% 0;
+  }
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  nav {
+    font-family: "Alegreya SC", serif;
+    font-weight: 700;
+    font-size: 7.4rem;
+    letter-spacing: 0.05rem;
+    position: relative;
+    bottom: 1.5rem;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 0 3rem 0 3rem;
+    list-style-type: none;
+    padding: 1rem;
+  }
+  .active {
+    background: #7dfff2; 
+    background: radial-gradient(
+      ellipse at center,
+      #7dfff2 1%,
+      #ffffff 59%
+    ); 
+    
+    border-bottom: 3px solid grey;
+  }
+
+  nav ul li a:hover {
+    color: grey;
+  }
+}
+/*
+|
+|
+|
+|
+|
+|
+HOME PAGE
+|
+|
+|
+|
+|
+|
+*/
+@media only screen and (min-width: 601px) {
+  .heroBox img {
+    position: relative;
+    z-index: 0;
+    border-bottom: 5px solid var(--blue-white);
+    height: auto;
+    width: 100%;
+  }
+
+  .htBox::after {
+    content: "Family at the Beach";
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    position: relative;
+    right: 19rem;
+    top: 3rem;
+  }
+  .htBox {
+    width: 100%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    bottom: 18rem;
+    width: 70%;
+    font-size: 2rem;
+    margin: auto;
+    padding: 2rem 3rem;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
+    height: 130px;
+  }
+  .contentFlex {
+    display: flex;
+  }
+
+  .leftSide h2 {
+    font-size: 3.4rem;
+    text-align: center;
+  }
+
+  .flBox {
+    background-color: white;
+    padding: 2rem;
+    width: 80%;
+    margin: 2rem auto;
+    font-size: 2rem;
+    line-height: 2rem;
+    border-bottom: 8px solid var(--blue-white);
+    box-shadow: 0px 0px 5px grey;
+  }
+  .slBox {
+    background-color: white;
+    padding: 2rem;
+    width: 80%;
+    font-size: 2rem;
+    margin: 2rem auto;
+    line-height: 2rem;
+    border-bottom: 8px solid var(--blue-white);
+    box-shadow: 0px 0px 5px grey;
+  }
+
+  .fsBox h2 {
+    font-size: 3.4rem;
+    text-align: center;
+    padding: 0 2rem 2rem 2rem;
+  }
+  .fsBox {
+    background-color: white;
+    border-bottom: 8px solid var(--blue-white);
+    padding: 6rem;
+    width: 90%;
+    height: 70vh;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    position: relative;
+    bottom: 11rem;
+    box-shadow: 0px 0px 5px grey;
+  }
+  .fsBox p {
+    width: 90%;
+    margin: auto;
+  }
+  .buttonCenter {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0 0 0;
+  }
+  .fsBox button {
+    padding: 2rem;
+    font-family: "Alegreya SC", serif;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 236, 109, 1) 100%
+    );
+    box-shadow: 0 0 5px grey;
+  }
+  .fsBox button a {
+    text-decoration: none;
+    color: black;
+  }
+  .fxBox button:hover {
+    background-color: var(--light-blue);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .heroBox img {
+    position: relative;
+    z-index: 0;
+    border-bottom: 5px solid var(--blue-white);
+    height: auto;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .htBox::after {
+    content: "Family at the Beach";
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    position: relative;
+    right: 19rem;
+    top: 3rem;
+  }
+  .htBox {
+    width: 100%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    bottom: 7rem;
+    width: 100%;
+    font-size: 2rem;
+    margin: 6rem auto;
+    padding: 2rem 3rem;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
+    height: 200px;
+  }
+
+  .leftSide {
+    margin-bottom: 20rem;
+  }
+  .leftSide h2 {
+    font-size: 3.4rem;
+    text-align: center;
+  }
+
+  .flBox {
+    background-color: white;
+    padding: 2rem;
+    width: 80%;
+    margin: 2rem auto;
+    font-size: 2rem;
+    line-height: 2rem;
+    border-bottom: 8px solid var(--blue-white);
+    box-shadow: 0px 0px 5px grey;
+  }
+  .slBox {
+    background-color: white;
+    padding: 2rem;
+    width: 80%;
+    font-size: 2rem;
+    margin: 2rem auto;
+    line-height: 2rem;
+    border-bottom: 8px solid var(--blue-white);
+    box-shadow: 0px 0px 5px grey;
+  }
+
+  .fsBox h2 {
+    font-size: 3.4rem;
+    text-align: center;
+    padding: 0 2rem 2rem 2rem;
+  }
+  .fsBox {
+    background-color: white;
+    border-bottom: 8px solid var(--blue-white);
+    padding: 6rem;
+    width: 90%;
+    height: 100vh;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    position: relative;
+    bottom: 11rem;
+    box-shadow: 0px 0px 5px grey;
+    margin: auto;
+  }
+  .fsBox p {
+    width: 90%;
+    margin: auto;
+  }
+  .buttonCenter {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0 0 0;
+  }
+  .fsBox button {
+    padding: 2rem;
+    font-family: "Alegreya SC", serif;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 236, 109, 1) 100%
+    );
+    box-shadow: 0 0 5px grey;
+  }
+  .fsBox button a {
+    text-decoration: none;
+    color: black;
+  }
+  .fxBox button:hover {
+    background-color: var(--light-blue);
+  }
+}
+/*
+|
+|
+|
+|
+|
+|
+Destinations
+|
+|
+|
+|
+|
+|
+*/
+
+.figDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.figDiv figure {
+  width: 300px;
+  background-color: white;
+  margin: 2rem;
+  border: 8px solid var(--blue-white);
+  box-shadow: 0px 0px 5px grey;
+}
+.figDiv figure img {
+  width: 100%;
+  height: auto;
+}
+
+.figDiv figcaption div {
+  font-family: "Alegreya SC", serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.figDiv figcaption {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  padding: 1rem;
+}
+
+/*
+|
+|
+|
+|
+|
+|
+Packages
+|
+|
+|
+|
+|
+|
+*/
+.package {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+.package img,
+.info {
+  box-shadow: 0px 0px 5px grey;
+}
+.info {
+  background-color: white;
+  width: 870px;
+  border-bottom: 8px solid var(--blue-white);
+  position: relative;
+  z-index: 1;
+}
+.info h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: "Alegreya SC", serif;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  padding-top: 2rem;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding: 2rem;
+  text-decoration: none;
+}
+.links a {
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.4rem;
+}
+.links p {
+  text-align: center;
+  margin: 0 1rem;
+  line-height: 2rem;
+}
+
+.package h3 {
+  background-color: var(--light-blue);
+  padding: 2rem;
+  font-size: 2.4rem;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 2rem;
+}
+
+.packageCenter {
+  text-align: center;
+  font-size: 1.6rem;
+}
+/*
+|
+|
+|
+|
+|
+|
+Video
+|
+|
+|
+|
+|
+|
+*/
+.navagioTitle {
+  font-size: 2.4rem;
+  padding: 2rem;
+}
+
+iframe {
+  padding-bottom: 2rem;
+  max-width: 1000px;
+  border: none;
+}
+/*
+|
+|
+|
+|
+|
+|
+Contact Us
+|
+|
+|
+|
+|
+|
+*/
+.form {
+  width: 80%;
+  margin: 4rem auto;
+  box-shadow: 0px 0px 5px grey;
+}
+
+.contactUs {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.contactUs h2 {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.contactUs img {
+  margin: auto;
+}
+legend {
+  font-family: "Alegreya SC", serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  background-color: white;
+}
+
+fieldset {
+  background-color: var(--blue-white);
+  padding: 2rem;
+  border: none;
+  font-family: "Noto Serif", serif;
+  width: 100%;
+  border-top: 32px solid white;
+}
+
+.booknow h2,
+.booknow select,
+.booknow option,
+.booknow textarea,
+.booknow [type="tel"],
+.booknow [type="email"],
+.booknow [type="text"] {
+  display: block;
+}
+
+.booknow label,
+h2 {
+  font-size: 1.6rem;
+  font-family: "Alegreya SC", serif;
+  margin-top: 1rem;
+}
+
+.booknow input,
+select,
+option {
+  font-family: "Noto Serif", serif;
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid grey;
+}
+
+.booknow select,
+.booknow option {
+  font-family: "Noto Serif", serif;
+  font-size: 1.6rem;
+  width: 100%;
+}
+.customerName {
+  display: flex;
+}
+.cn1 {
+  width: 50%;
+  padding-right: 2rem;
+}
+.cn2 {
+  width: 50%;
+}
+
+.customerContact {
+  display: flex;
+  margin: auto;
+}
+.cc1 {
+  width: 35%;
+  padding-right: 2rem;
+}
+
+.cc2 {
+  width: 65%;
+}
+
+.da input {
+  width: 25%;
+}
+
+.dd input {
+  width: 25%;
+}
+
+.move {
+  position: relative;
+  top: 3rem;
+}
+.cv select {
+  width: 50%;
+}
+.da {
+  position: relative;
+  top: 1rem;
+}
+.dd {
+  position: relative;
+  top: 2rem;
+}
+
+.airlineCenter {
+  display: flex;
+  flex-direction: column;
+}
+input[type="radio"] {
+  width: 5%;
+}
+
+.activityCenter {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="checkbox"] {
+  width: 5%;
+}
+
+.acCenter {
+  display: flex;
+}
+.acCenter select {
+  padding-left: 2rem;
+}
+.a {
+  width: fit-content;
+  margin-right: 2rem;
+}
+.c {
+  width: fit-content;
+}
+.airlineMove {
+  margin-top: 3rem;
+}
+.rq {
+  font-weight: 700;
+}
+
+.requestMove {
+  position: relative;
+  margin-top: 7rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  font-family: "Noto Serif", serif;
+  font-size: 1.6rem;
+  height: 10rem;
+  border: 2px solid grey;
+}
+
+.submit input {
+  margin: 4rem auto;
+  width: 100%;
+  font-family: "Alegreya SC", serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 236, 109, 1) 100%
+  );
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 5px grey;
+}
+/*
+|
+|
+|
+|
+|
+|
+FOOTER
+|
+|
+|
+|
+|
+|
+*/
+@media only screen and (max-width: 600px) {
+  footer {
+    background-color: white;
+    font-family: "Noto Serif", serif;
+    box-shadow: 0px 0px 5px grey;
+    margin: auto;
+  }
+  .subFooterDiv {
+    width: 100%;
+    margin: 2rem auto;
+    font-size: 2.4rem;
+  }
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe h3 {
+    font-size: 2rem;
+    padding: 3rem 0;
+  }
+  .subEmail {
+    margin-bottom: 2rem;
+  }
+  .subEmail input {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--blue-white);
+  }
+
+  .subEmail input[placeholder] {
+    font-size: 1.4rem;
+    padding-left: 2rem;
+    color: grey;
+  }
+  .subscribe button {
+    padding: 1rem;
+    font-family: "Alegreya SC", serif;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    background-color: var(--sand-yellow);
+    height: 40px;
+  }
+  .subscribe button:hover {
+    box-shadow: 5px 5px 5px black;
+  }
+  .subFooterDiv p {
+    margin: 1rem auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 601px) {
+  footer {
+    background-color: white;
+    height: 20vh;
+    font-family: "Noto Serif", serif;
+    box-shadow: 0px 0px 5px grey;
+  }
+  .subFooterDiv {
+    width: 104.8rem;
+    margin: 2rem auto;
+    font-size: 2.4rem;
+  }
+  .subscribe {
+    display: flex;
+    align-items: center;
+  }
+
+  .subscribe h3 {
+    font-size: 2rem;
+    padding: 3rem 0;
+  }
+  .subEmail {
+    padding: 3rem;
+  }
+  .subEmail input {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--blue-white);
+  }
+
+  .subEmail input[placeholder] {
+    font-size: 1.4rem;
+    padding-left: 2rem;
+    color: grey;
+  }
+  .subscribe button {
+    padding: 1rem;
+    font-family: "Alegreya SC", serif;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    background-color: var(--sand-yellow);
+    height: 40px;
+  }
+  .subscribe button:hover {
+    box-shadow: 5px 5px 5px black;
+  }
+  .subFooterDiv p {
+    margin: 1rem auto;
+  }
+}

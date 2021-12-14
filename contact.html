@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Beach Vacay Co all stop shop for beach vacations."
+    />
+    <meta name="author" content="Hannah Armstrong" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;500;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Beach Vacay Co: Videos</title>
+  </head>
+  <body class="homebody">
+    <header>
+      <div class="logo">
+        <h1>Beach Vacay Co.</h1>
+      </div>
+      <div class="beachEffect">
+        <div class="logoSand"></div>
+        <div class="logoWater"></div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="destination.html">Destinations</a></li>
+
+          <li><a href="packages.html">Packages</a></li>
+
+          <li><a href="video.html">Videos</a></li>
+
+          <li class="active"><a href="contact.html">Book Your Trip!</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <main>
+        <div class='form'>
+            <form method="get" class="booknow" action="thankyou.html">
+                <fieldset>
+                    <legend>Book Now!</legend>
+                        <div class="customerName">
+                            <div class="cn1">
+                                <label>
+                                First Name*<input type="text" required>
+                                </label>
+                            </div>
+                            <div class="cn2">
+                                <label>Last Name*<input type="text" required></label>
+                            </div>
+                        </div>
+                        <div class="customerContact">
+                            <label class="cc1">Phone Number<input type="tel"></label>
+
+                            <label class="cc2">Email*<input type="email" required></label>
+
+                        </div>
+                        <div class='move'>
+                        <label class="cv">Choose Your Vacation Package<select><option>Retreat At The Phi Phi Islands, Thailand</option><option>One Week at Golden Horn Beach, Golden Horn</option><option>Santa Monica Bay Resort, California</option></select></label>
+                        <label class="da">Departure Airport<input type="text"></label>
+                        <label class="dd">Departure Date<input type="text" placeholder="MMDDYYYY"></label>
+                        <div class="acCenter">
+                            <label class="a">Adults<select><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label>
+                            <label class="c">Children<select><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>5</option></select></label>
+                        </div>
+                        <div class="airlineMove">
+                        <h2>Preferred Airline:</h2>
+                        <div class="airlineCenter">
+                            <label><input type="radio" name="airline" value="alaska">Alaska Airlines</label>
+                            <label><input type="radio" name="airline" value="delta">Delta Airlines</label>
+                            <label><input type="radio" name="airline" value="spirit">Spirit Airlines</label>
+                        </div></div>
+                        <h2>Add Activities:</h2>
+                        <div class="activityCenter">
+                        <label><input type="checkbox">Tours</label>
+                        <label><input type="checkbox">Scuba Diving</label>
+                        <label><input type="checkbox">Food/Wine Tasting</label>
+                        <label><input type="checkbox">Cliff Diving</label>
+                        <label><input type="checkbox">Hang Gliding</label>
+                        </div></div>
+                        <div class="requestMove">
+                        <label class="rq">Requests & Questions<textarea></textarea></label>
+                        <label class='submit'><input type="submit" value="Book"></label></div>
+                    
+                </fieldset>
+            </form>
+        </div>
+        <div class="contactUs">
+            <div class="phone">
+                <img src="images/phone.png" alt="Phone Icon">
+                <h2>1(902)-345-7817</h2>
+            </div>
+            <div class="email">
+                <img src="images/email.png" alt="Email Icon">
+                <h2>beachvacay@gmail.com</h2>
+            </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="subFooterDiv">
+        <div class="subscribe">
+          <h3>Never miss a deal, subscribe to our newsletter!</h3>
+          <div class="subEmail">
+            <input
+              type="email"
+              name="Subscribe Email"
+              size="32"
+              placeholder="Email"
+            />
+          </div>
+          <button>Subscribe</button>
+        </div>
+        <div>
+          <p>
+            &copy; 2021 Hannah pivacy Notice | Terms and Conditions | Safety
+            Waiver
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

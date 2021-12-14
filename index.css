@@ -262,7 +262,10 @@ HOME PAGE
   .contentFlex {
     display: flex;
   }
-
+  .leftSide {
+    position: relative;
+    bottom: 3.5rem;
+  }
   .leftSide h2 {
     font-size: 3.4rem;
     text-align: center;
@@ -535,7 +538,9 @@ Packages
   text-align: center;
   letter-spacing: 0.05rem;
   padding-top: 2rem;
+  
 }
+
 .links {
   display: flex;
   justify-content: center;
@@ -548,6 +553,7 @@ Packages
   text-decoration: none;
   margin: 0 1rem;
   font-size: 1.4rem;
+  color: grey;
 }
 .links p {
   text-align: center;
@@ -584,13 +590,17 @@ Video
 */
 .navagioTitle {
   font-size: 2.4rem;
-  padding: 2rem;
+  padding: 4rem;
+  display: block;
+  margin: auto;
 }
 
 iframe {
   padding-bottom: 2rem;
-  max-width: 1000px;
   border: none;
+  display: block;
+  margin: auto;
+  min-height: 600px;
 }
 /*
 |
@@ -916,9 +926,12 @@ FOOTER
     height: 40px;
   }
   .subscribe button:hover {
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px grey;
   }
   .subFooterDiv p {
     margin: 1rem auto;
   }
+}
+button:hover {
+  box-shadow: 5px 5px 5px grey;
 }

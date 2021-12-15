@@ -681,7 +681,8 @@ option {
   font-size: 1.6rem;
   width: 100%;
   padding: 1rem;
-  border: 2px solid grey;
+  border: none;
+  border-radius: 10px;
 }
 
 .booknow select,
@@ -757,6 +758,7 @@ input[type="checkbox"] {
 
 .acCenter {
   display: flex;
+  margin-top: 2rem;
 }
 .acCenter select {
   padding-left: 2rem;
@@ -786,7 +788,8 @@ textarea {
   font-family: "Noto Serif", serif;
   font-size: 1.6rem;
   height: 10rem;
-  border: 2px solid grey;
+  border: none;
+  border-radius: 10px;
 }
 
 .submit input {
